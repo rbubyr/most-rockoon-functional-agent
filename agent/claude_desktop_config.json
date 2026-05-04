@@ -1,0 +1,21 @@
+{
+  "mcpServers": {
+    "MOSK Tempest agent": {
+      "command": "/Users/rbubyr/Projects/mosk-tempest-agent/.venv/bin/python",
+      "args": [
+        "/Users/rbubyr/Projects/mosk-tempest-agent/main.py"
+      ]
+    },
+    "MOSK Rockoon functional agent": {
+      "command": "/Users/rbubyr/Projects/mosk-rockoon-functional-agent/.venv/bin/python",
+      "args": [
+        "/Users/rbubyr/Projects/mosk-rockoon-functional-agent/main.py"
+      ]
+    }
+  },
+  "preferences": {
+    "coworkWebSearchEnabled": true,
+    "coworkScheduledTasksEnabled": false,
+    "ccdScheduledTasksEnabled": true
+  }
+}
