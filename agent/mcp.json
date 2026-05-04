@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "MOSK Rockoon functional agent": {
+      "command": "/Users/rbubyr/Projects/mosk-rockoon-functional-agent/.venv/bin/python",
+      "args": [
+        "/Users/rbubyr/Projects/mosk-rockoon-functional-agent/main.py"
+      ],
+      "description": "SSH: Rockoon functional env on MOSK (discover/patch netpol, apt, clone, tox). Defaults in src/mosk_rockoon_functional_agent/config.py"
+    }
+  }
+}
