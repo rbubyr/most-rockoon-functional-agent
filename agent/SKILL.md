@@ -13,12 +13,6 @@ description: >-
 
 Use a **standalone seed node**—commonly **`test_srv`** in lab topologies—as the **`host`** for SSH-based tools (apt, clone, tox). **Do not** default to the cluster **master** for heavy functional prep unless you have no alternative: a dedicated seed node isolates package churn, disk use, and long `tox` runs from control-plane and production-sensitive workloads.
 
-## Relationship to Tempest
-
-- **MOSK Tempest agent** (personal skill `mosk-tempest-agent`): OSDPL-driven **in-cluster** Tempest.
-- **This skill**: **Rockoon** repo **`tox -e functional`** on a **node shell** over **SSH**, plus **remote kubectl** for exporter **NetworkPolicy** in **`osh-system`**.
-
-Keep workflows separate.
 
 ## MCP tool order
 
