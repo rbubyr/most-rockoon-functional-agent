@@ -28,15 +28,6 @@ Edit **[`src/mosk_rockoon_functional_agent/config.py`](src/mosk_rockoon_function
 
 Non-empty tool arguments still override: **`identity_file`**, **`repo_url`**, **`hook_url`**, **`gerrit_http_password`** on **`remote_clone_rockoon`**.
 
-### PyCharm (unresolved imports such as `mcp`)
-
-Unresolved **`from mcp.server.fastmcp import FastMCP`** almost always means the IDE is **not** using the venv where `mcp` is installed.
-
-1. **Settings** → **Project: …** → **Python Interpreter** → **Add Interpreter** → **Add Local Interpreter**.
-2. Choose **Existing** and pick **`…/mosk-rockoon-functional-agent/.venv/bin/python`** (not the system interpreter).
-3. Apply, wait for indexing; if needed: **File** → **Invalidate Caches** → **Invalidate and Restart**.
-
-The repo includes **`pyrightconfig.json`** and **`[tool.pyright]`** in **`pyproject.toml`** so Pyright-based checking uses **`.venv`**. After switching the interpreter, `mcp` should resolve under **External Libraries** for that SDK.
 
 ## Cursor MCP config
 
